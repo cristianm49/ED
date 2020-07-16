@@ -1,0 +1,63 @@
+﻿using System;
+using System.Collection.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace arreglos_csharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            String op = "0";
+
+        while (true) {
+             cout <<"Ingresar estudiante op.12"<<;   
+             cout <<"Salir otro numero"<<;   
+            op = Console.readLine();
+            if (!op.equals("1")) {
+                break;
+            }
+            
+            cout <<"Ingrese nombre"<<; 
+            String nombre=Console.readLine();
+            
+            cout <<"Ingrese materia"<<;  
+            String materia = Console.readLine();
+            
+            cout <<Ingrese la dimension<<; 
+            int dimension = byte.Parse(Console.readLine());
+            int[][][] notas = new int[dimension][dimension][dimension];
+
+            double sumaNotas = 0;
+
+            for (int i = 0; i < dimension; i++) {
+                for (int j = 0; j < dimension; j++) {
+                    for (int k = 0; k < dimension; k++) {
+                        cout <<Ingrese la nota<<;
+                        notas[i][j][k] = byte.Parse(Console.readLine());
+                        sumaNotas += notas[i][j][k];
+                    }
+                }
+            }
+
+              cout <<"el promedio del estudiante: "<<nombre<<"materia"<<materia<<" es: "<<(sumaNotas / (dimension * dimension * dimension)))<<end1;
+ 
+
+        }
+
+    }
+
+}
+      
+          
+          
+      
+      
+      
+        }
+    }
+}
+
+
